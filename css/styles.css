@@ -34,7 +34,7 @@ ul {
 ul .inner {
   padding-left: 1em;
   overflow: hidden;
-  display: none;
+  /*display: none;*/
 }
 ul .inner.show {
   /*display: block;*/
