@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <h1>A Cool Accordion</h1>
+    <h1>Simple Accordion</h1>
 
     <p class="description">
         You could simply toggle the .show class (if display: block is uncommented in the CSS) in JavaScript, but you'll lose the animation.
@@ -14,7 +14,17 @@
 
     <ul class="accordion">
         <li>
-            <a class="toggle" href="javascript:void(0);">Item 1</a>
+            <a class="title" href="#">This has the .title class</a>
+            <ul class="inner content">
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>This container has the .container class</li>
+            </ul>
+        </li>
+
+        <li>
+            <a class="" href="#">Has no identifying class</a>
             <ul class="inner">
                 <li>Option 1</li>
                 <li>Option 2</li>
@@ -23,19 +33,10 @@
         </li>
 
         <li>
-            <a class="toggle" href="javascript:void(0);">Item 2</a>
-            <ul class="inner">
-                <li>Option 1</li>
-                <li>Option 2</li>
-                <li>Option 3</li>
-            </ul>
-        </li>
-
-        <li>
-            <a class="toggle" href="javascript:void(0);">Item 3</a>
+            <a class="toggle" href="#">Item 3</a>
             <ul class="inner">
                 <li>
-                    <a href="#" class="toggle">Open Inner</a>
+                    <a href="#" class="title">This has the .title class</a>
                     <div class="inner">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus placerat fringilla. Duis a elit et dolor laoreet volutpat. Aliquam ultrices mauris id mattis imperdiet. Aenean cursus ultrices justo et varius. Suspendisse aliquam orci id dui dapibus
@@ -45,7 +46,7 @@
                 </li>
 
                 <li>
-                    <a href="#" class="toggle">Open Inner #2</a>
+                    <a href="#" class="">Has no identifying class</a>
                     <div class="inner">
                         <p>
                             Children will automatically close upon closing its parent.
@@ -58,16 +59,16 @@
         </li>
 
         <li>
-            <a class="toggle" href="javascript:void(0);">Item 4</a>
+            <a class="" href="#">Item 4</a>
             <ul class="inner">
                 <li>
-                    <a href="#" class="toggle">Technically any number of nested elements</a>
+                    <a href="#" class="">Technically any number of nested elements</a>
                     <ul class="inner">
                         <li>
-                            <a href="#" class="toggle">Another nested element</a>
+                            <a href="#" class="">Another nested element</a>
                             <div class="inner">
                                 <p>
-                                    As long as the inner element has inner as one of its classes then it will be toggled.
+                                    As long as the inner element has two children, the first element will toggle the second element.
                                 </p>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus placerat fringilla. Duis a elit et dolor laoreet volutpat. Aliquam ultrices mauris id mattis imperdiet. Aenean cursus ultrices justo et varius. Suspendisse aliquam orci id dui dapibus
