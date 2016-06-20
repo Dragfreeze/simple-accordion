@@ -9,7 +9,7 @@
     <h1>Simple Accordion</h1>
 
     <p class="description">
-        You could simply toggle the .show class (if display: block is uncommented in the CSS) in JavaScript, but you'll lose the animation.
+        A simple accordion that should meet most of the requirements with minimal setup. Also has some options for customizing behaviour.
     </p>
 
     <ul class="accordion">
@@ -19,16 +19,17 @@
                 <li>Option 1</li>
                 <li>Option 2</li>
                 <li>Option 3</li>
-                <li>This container has the .container class</li>
+                <li>This list container has the .content class</li>
             </ul>
         </li>
 
         <li>
-            <a class="" href="#">Has no identifying class</a>
+            <a class="" href="#">This has no identifying class</a>
             <ul class="inner">
                 <li>Option 1</li>
                 <li>Option 2</li>
                 <li>Option 3</li>
+                <li>This list container has no identifying class</li>
             </ul>
         </li>
 
@@ -46,7 +47,7 @@
                 </li>
 
                 <li>
-                    <a href="#" class="">Has no identifying class</a>
+                    <a href="#" class="">This has no identifying class</a>
                     <div class="inner">
                         <p>
                             Children will automatically close upon closing its parent.
@@ -62,7 +63,7 @@
             <a class="" href="#">Item 4</a>
             <ul class="inner">
                 <li>
-                    <a href="#" class="">Technically any number of nested elements</a>
+                    <a href="#" class="">You can have any number of nested elements</a>
                     <ul class="inner">
                         <li>
                             <a href="#" class="">Another nested element</a>
@@ -71,8 +72,7 @@
                                     As long as the inner element has two children, the first element will toggle the second element.
                                 </p>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus placerat fringilla. Duis a elit et dolor laoreet volutpat. Aliquam ultrices mauris id mattis imperdiet. Aenean cursus ultrices justo et varius. Suspendisse aliquam orci id dui dapibus
-                                    blandit. In hac habitasse platea dictumst. Sed risus velit, pellentesque eu enim ac, ultricies pretium felis.
+                                    This may not always be what you want.
                                 </p>
                             </div>
                         </li>
@@ -87,9 +87,18 @@
     </ul>
 
 
+<pre class="pre-show prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com">&lt;!-- Important Owl stylesheet --&gt;</span></li><li class="L1"><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"owl-carousel/owl.carousel.css"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="com">&lt;!-- Default Theme --&gt;</span></li><li class="L4"><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"owl-carousel/owl.theme.css"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="com">&lt;!--  jQuery 1.7+  --&gt;</span></li><li class="L7"><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"jquery-1.9.1.min.js"</span><span class="tag">&gt;&lt;/script&gt;</span></li><li class="L8"><span class="pln">&nbsp;</span></li><li class="L9"><span class="com">&lt;!-- Include js plugin --&gt;</span></li><li class="L0"><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"assets/owl-carousel/owl.carousel.js"</span><span class="tag">&gt;&lt;/script&gt;</span></li></ol></pre>
+
+
+
+<h3>Dependencies</h3>
+<ul>
+    <li>jquery</li>
+    <li>jquery ui</li>
+    <li>modernizr</li>
+    <li>underscore</li>
+</ul>
+
     <script data-main="app" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
-
-
-
 </body>
 </html>

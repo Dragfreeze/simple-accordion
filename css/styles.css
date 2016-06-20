@@ -12,6 +12,9 @@ p {
   font-size: 1.1em;
   margin: 1em 0;
 }
+.accordion > li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
 .description {
   margin: 1em auto 2.25em;
 }
@@ -53,4 +56,41 @@ ul li a {
 }
 ul li a:hover {
   background: rgba(0, 0, 0, 0.9);
+}
+
+
+
+pre.prettyprint {
+    padding: 20px;
+    background-color: #f3f3f3;
+    border: 0px solid #e1e1e8;
+   
+}
+ol.linenums {
+    margin: 0 0 0 40px;
+}
+ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 20px;
+    text-shadow: 0 1px 0 #fff;
+}
+.com {
+    color: #93a1a1;
+}
+.prettyprint .tag {
+    color: #195f91;
+}
+.typ, .atn, .dec, .var {
+    color: #3fbf79;
+}
+.str, .atv {
+    color: #ff8a3c;
+}
+.pln {
+    color: #48484c;
+}
+pre span {
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-size: 15px;
 }
